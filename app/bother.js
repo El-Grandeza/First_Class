@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
 const _layout = () => {
@@ -20,7 +20,7 @@ const _layout = () => {
           }}
         ></View>
       </View>
-      <View style={{ marginTop: 80, alignSelf: "center" }}>
+      <View style={{ marginTop: 40, alignSelf: "center" }}>
         <Text style={{ fontSize: 50, fontWeight: "400", textAlign: "center" }}>
           What's
         </Text>
@@ -30,7 +30,7 @@ const _layout = () => {
       </View>
       <View style={{ flexDirection: "row", gap: 30 }}>
         <View>
-          <TouchableOpacity
+          <View
             style={{
               backgroundColor: "#ffc75f",
               height: 56,
@@ -48,8 +48,8 @@ const _layout = () => {
             >
               Insomia
             </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+          </View>
+          <View
             style={{
               backgroundColor: "#ff8066",
               height: 56,
@@ -67,8 +67,8 @@ const _layout = () => {
             >
               Sadness
             </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+          </View>
+          <View
             style={{
               backgroundColor: "#ff8066",
               height: 56,
@@ -86,8 +86,8 @@ const _layout = () => {
             >
               Uncertainty
             </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+          </View>
+          <View
             style={{
               backgroundColor: "#ff8066",
               height: 56,
@@ -105,8 +105,8 @@ const _layout = () => {
             >
               Anger
             </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+          </View>
+          <View
             style={{
               backgroundColor: "#ff8066",
               height: 56,
@@ -124,10 +124,10 @@ const _layout = () => {
             >
               Envy
             </Text>
-          </TouchableOpacity>
+          </View>
         </View>
         <View>
-          <TouchableOpacity
+          <View
             style={{
               backgroundColor: "#ffc75f",
               height: 56,
@@ -143,29 +143,10 @@ const _layout = () => {
                 textAlign: "center",
               }}
             >
-              Anxiety
+              Insomia
             </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              backgroundColor: "#ffc75f",
-              height: 56,
-              width: 180,
-              borderRadius: 30,
-              justifyContent: "center",
-              marginTop: 20,
-            }}
-          >
-            <Text
-              style={{
-                fontSize: 20,
-                textAlign: "center",
-              }}
-            >
-              Stress
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+          </View>
+          <View
             style={{
               backgroundColor: "#ff8066",
               height: 56,
@@ -181,10 +162,10 @@ const _layout = () => {
                 textAlign: "center",
               }}
             >
-              Laziness
+              Sadness
             </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+          </View>
+          <View
             style={{
               backgroundColor: "#ff8066",
               height: 56,
@@ -200,10 +181,10 @@ const _layout = () => {
                 textAlign: "center",
               }}
             >
-              Apathy
+              Uncertainty
             </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+          </View>
+          <View
             style={{
               backgroundColor: "#ff8066",
               height: 56,
@@ -219,31 +200,30 @@ const _layout = () => {
                 textAlign: "center",
               }}
             >
-              Other
+              Anger
             </Text>
-          </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              backgroundColor: "#ff8066",
+              height: 56,
+              width: 180,
+              borderRadius: 30,
+              justifyContent: "center",
+              marginTop: 20,
+            }}
+          >
+            <Text
+              style={{
+                fontSize: 20,
+                textAlign: "center",
+              }}
+            >
+              Envy
+            </Text>
+          </View>
         </View>
       </View>
-      <TouchableOpacity
-        style={{
-          height: 60,
-          width: "100%",
-          borderRadius: 40,
-          marginTop: 40,
-          justifyContent: "center",
-          borderWidth: 1,
-        }}
-      >
-        <Text
-          style={{
-            justifyContent: "center",
-            textAlign: "center",
-            fontSize: 20,
-          }}
-        >
-          Skip
-        </Text>
-      </TouchableOpacity>
     </View>
   );
 };
@@ -252,8 +232,6 @@ export default _layout;
 
 const styles = StyleSheet.create({
   yoo: {
-    padding: 40,  
-    justifyContent: "center",
-    marginTop: 100,
+    padding: 40,
   },
 });
